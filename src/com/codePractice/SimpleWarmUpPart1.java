@@ -1,10 +1,8 @@
 package com.codePractice;
 
-public class Main {
+public class SimpleWarmUpPart1 {
 
     public static void main(String[] args) {
-
-
     }
 
     /*
@@ -73,6 +71,46 @@ public class Main {
     public boolean nearHundred(int n) {
 
         return (Math.abs(100 - n) <= 10  || Math.abs(200 - n) <= 10);
+    }
+
+    /*
+    We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling.
+    We are in trouble if they are both smiling or if neither of them is smiling. Return true if we are in trouble.
+    monkeyTrouble(true, true) → true
+    monkeyTrouble(false, false) → true
+    monkeyTrouble(true, false) → false
+     */
+    public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+        return(aSmile && bSmile) || (!aSmile && !bSmile);
+    }
+
+    /*
+    Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+    sumDouble(1, 2) → 3
+    sumDouble(3, 2) → 5
+    sumDouble(2, 2) → 8
+    */
+    public int sumDouble(int a, int b) {
+        if(a==b){
+            return (a+b)*2;
+        }else{
+            return a+b;
+        }
+    }
+
+    /*
+    Given 2 int values, return true if one is negative and one is positive.
+    Except if the parameter "negative" is true, then return true only if both are negative.
+    posNeg(1, -1, false) → true
+    posNeg(-1, 1, false) → true
+    posNeg(-4, -5, true) → true
+     */
+    public boolean posNeg(int a, int b, boolean negative) {
+        if (negative) {
+            return (a < 0 && b < 0);
+        } else {
+            return ((a < 0 && b > 0) || (a > 0 && b < 0));
+        }
     }
 
 
