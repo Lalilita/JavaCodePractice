@@ -1,4 +1,4 @@
-package com.codePractice;
+package com.codePractice.warmup;
 
 public class MediumWarmUpPart3 {
     /*

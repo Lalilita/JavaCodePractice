@@ -1,4 +1,4 @@
-package com.codePractice;
+package com.codePractice.warmup;
 
 public class SimpleWarmUpPart4 {
     public static void main(String[] args) {
