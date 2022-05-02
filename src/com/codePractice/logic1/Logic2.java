@@ -1,8 +1,5 @@
 package com.codePractice.logic1;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Logic2 {
     /*
     You are driving a little too fast, and a police officer stops you. Write code to compute the result,
