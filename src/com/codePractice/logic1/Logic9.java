@@ -58,4 +58,5 @@ public class Logic9 {
         int bL = b / 10;
         return (aR == bR || aR == bL) || (aL == bR || aL == bL);
     }
+
 }
