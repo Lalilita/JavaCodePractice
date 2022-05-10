@@ -1,6 +1,6 @@
 package com.codePractice.logic1;
 
-public class Logic1 {
+public class Logic01 {
     /*
     The squirrels in Palo Alto spend most of the day playing. In particular,
     they play if the temperature is between 60 and 90 (inclusive).
