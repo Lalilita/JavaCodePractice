@@ -1,4 +1,4 @@
-package string2;
+package com.codePractice.string2;
 
 public class string01 {
     /*
