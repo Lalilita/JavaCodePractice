@@ -31,4 +31,29 @@ public class string02 {
         b = b.toLowerCase();
         return a.endsWith(b) || b.endsWith(a);
     }
+
+    /*
+    Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
+    xyzThere("abcxyz") → true
+    xyzThere("abc.xyz") → false
+    xyzThere("xyz.abc") → true
+    */
+    public boolean xyzThere(String str) {
+        if(str.contains("xyz") && str.contains(".")){
+            for(int i = 0; i < str.length(); i++){
+                if(str.charAt(i) == '.'){
+                    if(str.substring(i+1).startsWith("xyz")){
+                        i = i+3;
+                    }
+                }else if(str.charAt(i) == 'x'){
+                    if(str.substring(i+1).startsWith("yz")){
+                        return true;
+                    }
+                }
+            }
+        }else if(str.contains("xyz") && !str.contains(".")){
+            return true;
+        }
+        return false;
+    }
 }
